@@ -1,5 +1,23 @@
-# Container Action Template
+<p align="center">
+  <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
+</p>
 
-To get started, click the `Use this template` button on this repository [which will create a new repository based on this template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
+# Uppercase Action
+This action converts a text to uppercase
 
-For info on how to build your first Container action, see the [toolkit docs folder](https://github.com/actions/toolkit/blob/master/docs/container-action.md).
+## Inputs
+### `text`
+**Required** The text to be converted to uppercase.
+
+## Outputs
+
+### `uppercase-text`
+The text converted to uppercase.
+
+## Example Usage
+
+```yaml
+uses: shimayu22/GitHubActions-Docker@v1.0.0
+with:
+    text: Hello, World!
+```
